@@ -11,6 +11,8 @@
 		E143E8832C10A3B900EB76B9 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E143E8822C10A3B900EB76B9 /* ContentView.swift */; };
 		E143E8852C10A3BC00EB76B9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E143E8842C10A3BC00EB76B9 /* Assets.xcassets */; };
 		E143E8882C10A3BC00EB76B9 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E143E8872C10A3BC00EB76B9 /* Preview Assets.xcassets */; };
+		E143E8912C10A44500EB76B9 /* StartingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E143E8902C10A44500EB76B9 /* StartingView.swift */; };
+		E143E8932C11E62700EB76B9 /* tutorial.swift in Sources */ = {isa = PBXBuildFile; fileRef = E143E8922C11E62700EB76B9 /* tutorial.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +21,8 @@
 		E143E8822C10A3B900EB76B9 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		E143E8842C10A3BC00EB76B9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E143E8872C10A3BC00EB76B9 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		E143E8902C10A44500EB76B9 /* StartingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartingView.swift; sourceTree = "<group>"; };
+		E143E8922C11E62700EB76B9 /* tutorial.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = tutorial.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,8 +55,8 @@
 		E143E87F2C10A3B900EB76B9 /* AssistiveTouch++ */ = {
 			isa = PBXGroup;
 			children = (
-				E143E8802C10A3B900EB76B9 /* AssistiveTouch__App.swift */,
-				E143E8822C10A3B900EB76B9 /* ContentView.swift */,
+				E143E88F2C10A3CE00EB76B9 /* Model */,
+				E143E88E2C10A3C500EB76B9 /* View */,
 				E143E8842C10A3BC00EB76B9 /* Assets.xcassets */,
 				E143E8862C10A3BC00EB76B9 /* Preview Content */,
 			);
@@ -65,6 +69,24 @@
 				E143E8872C10A3BC00EB76B9 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		E143E88E2C10A3C500EB76B9 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				E143E8802C10A3B900EB76B9 /* AssistiveTouch__App.swift */,
+				E143E8822C10A3B900EB76B9 /* ContentView.swift */,
+				E143E8902C10A44500EB76B9 /* StartingView.swift */,
+				E143E8922C11E62700EB76B9 /* tutorial.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		E143E88F2C10A3CE00EB76B9 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,7 +160,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				E143E8832C10A3B900EB76B9 /* ContentView.swift in Sources */,
+				E143E8932C11E62700EB76B9 /* tutorial.swift in Sources */,
 				E143E8812C10A3B900EB76B9 /* AssistiveTouch__App.swift in Sources */,
+				E143E8912C10A44500EB76B9 /* StartingView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
