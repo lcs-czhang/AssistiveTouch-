@@ -1,5 +1,5 @@
 //
-//  StartingView.swift
+//  SplashScreenView.swift
 //  AssistiveTouch++
 //
 //  Created by Yuzhou Zhang on 2024-06-05.
@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct StartingView: View {
+struct SplashScreenView: View {
     var body: some View {
         //NavigationStack {
             VStack(alignment: .center, spacing: -20) {
