@@ -11,7 +11,7 @@ import SwiftUI
 struct AssistiveTouch__App: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            MenuView()
         }
     }
 }

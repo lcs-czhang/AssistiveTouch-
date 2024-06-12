@@ -18,6 +18,7 @@
 		E143E89C2C13663000EB76B9 /* CalculatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E143E89B2C13663000EB76B9 /* CalculatorView.swift */; };
 		E143E89E2C1366DE00EB76B9 /* PaintingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E143E89D2C1366DE00EB76B9 /* PaintingView.swift */; };
 		E143E8A02C13670D00EB76B9 /* VaultView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E143E89F2C13670D00EB76B9 /* VaultView.swift */; };
+		E1DC85D72C19FD6B003CE50F /* CalculatorModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1DC85D62C19FD6B003CE50F /* CalculatorModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,6 +34,7 @@
 		E143E89B2C13663000EB76B9 /* CalculatorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculatorView.swift; sourceTree = "<group>"; };
 		E143E89D2C1366DE00EB76B9 /* PaintingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaintingView.swift; sourceTree = "<group>"; };
 		E143E89F2C13670D00EB76B9 /* VaultView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VaultView.swift; sourceTree = "<group>"; };
+		E1DC85D62C19FD6B003CE50F /* CalculatorModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculatorModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,6 +97,7 @@
 		E143E88F2C10A3CE00EB76B9 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				E1DC85D52C19FD3F003CE50F /* FunctionModel */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -110,6 +113,14 @@
 				E143E89F2C13670D00EB76B9 /* VaultView.swift */,
 			);
 			path = FunctionView;
+			sourceTree = "<group>";
+		};
+		E1DC85D52C19FD3F003CE50F /* FunctionModel */ = {
+			isa = PBXGroup;
+			children = (
+				E1DC85D62C19FD6B003CE50F /* CalculatorModel.swift */,
+			);
+			path = FunctionModel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -183,6 +194,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E143E89A2C1365DE00EB76B9 /* WeatherReportView.swift in Sources */,
+				E1DC85D72C19FD6B003CE50F /* CalculatorModel.swift in Sources */,
 				E143E8A02C13670D00EB76B9 /* VaultView.swift in Sources */,
 				E143E8932C11E62700EB76B9 /* MenuView.swift in Sources */,
 				E143E8972C13648700EB76B9 /* MagnifyingView.swift in Sources */,
