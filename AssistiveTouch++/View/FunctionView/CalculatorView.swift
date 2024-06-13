@@ -55,24 +55,7 @@ struct CalculatorView: View {
                 })
             }
             .fontWeight(.ultraLight)
-            .foregroundStyle(Color.eToolText)
             HStack{
-                Button(action: {
-                    operators = "√"
-                }, label: {
-                    Image( "custom.x.squareroot.square")
-                        .resizable()
-                        .scaledToFit()
-                })
-                Spacer()
-                Button(action: {
-                    operators = "^"
-                }, label: {
-                    Image("x.square")
-                        .resizable()
-                        .scaledToFit()
-                })
-                Spacer()
                 Button(action: {
                     operators = "A"
                 }, label: {
@@ -88,6 +71,22 @@ struct CalculatorView: View {
                         .resizable()
                         .scaledToFit()
                 })
+                Spacer()
+                Button(action: {
+                    operators = "M"
+                }, label: {
+                    Image(systemName: "m.square")
+                        .resizable()
+                        .scaledToFit()
+                })
+                Spacer()
+                Button(action: {
+                    
+                }, label: {
+                    Image(systemName: "equal.square")
+                        .resizable()
+                        .scaledToFit()
+                })
             }
             .fontWeight(.ultraLight)
             .foregroundStyle(Color.eToolText)
@@ -97,19 +96,9 @@ struct CalculatorView: View {
                 format: .number
             )
             .textFieldStyle(.roundedBorder)
-            Button(action: {
-                
-            }, label: {
-                Image(systemName: "equal.square")
-                    .resizable()
-                    .scaledToFit()
-            })
-            .frame(height: 100)
-            .fontWeight(.ultraLight)
-            .foregroundStyle(Color.eToolText)
-            .padding()
             Text("\(answer)")
         }
+        .foregroundStyle(Color.eToolText)
         .padding()
     }
 }
