@@ -9,7 +9,7 @@ import SwiftUI
 
 struct MenuView: View {
     var body: some View {
-        //NavigationStack{
+        NavigationStack{
             ZStack {
                 Color.eToolBackground
                     .ignoresSafeArea()
@@ -52,7 +52,7 @@ struct MenuView: View {
                         }
                         
                         NavigationLink {
-                            //CalculatorView()
+                            CalculatorView()
                         } label: {
                             Text("Calculator")
                         }
@@ -77,7 +77,7 @@ struct MenuView: View {
                 .padding(50.0)
             }
             
-        //}
+        }
     }
 }
 

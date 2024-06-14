@@ -15,10 +15,17 @@
 		E143E8952C1363AF00EB76B9 /* TranslationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E143E8942C1363AF00EB76B9 /* TranslationView.swift */; };
 		E143E8972C13648700EB76B9 /* MagnifyingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E143E8962C13648700EB76B9 /* MagnifyingView.swift */; };
 		E143E89A2C1365DE00EB76B9 /* WeatherReportView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E143E8992C1365DE00EB76B9 /* WeatherReportView.swift */; };
-		E143E89C2C13663000EB76B9 /* CalculatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E143E89B2C13663000EB76B9 /* CalculatorView.swift */; };
 		E143E89E2C1366DE00EB76B9 /* PaintingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E143E89D2C1366DE00EB76B9 /* PaintingView.swift */; };
 		E143E8A02C13670D00EB76B9 /* VaultView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E143E89F2C13670D00EB76B9 /* VaultView.swift */; };
-		E1DC85D72C19FD6B003CE50F /* CalculatorModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1DC85D62C19FD6B003CE50F /* CalculatorModel.swift */; };
+		E14FC58C2C1C7B1400D0EBCA /* CalculatorMemoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E14FC58B2C1C7B1400D0EBCA /* CalculatorMemoryView.swift */; };
+		E1DC861C2C1C7746003CE50F /* Auth in Frameworks */ = {isa = PBXBuildFile; productRef = E1DC861B2C1C7746003CE50F /* Auth */; };
+		E1DC861E2C1C7746003CE50F /* Functions in Frameworks */ = {isa = PBXBuildFile; productRef = E1DC861D2C1C7746003CE50F /* Functions */; };
+		E1DC86202C1C7746003CE50F /* PostgREST in Frameworks */ = {isa = PBXBuildFile; productRef = E1DC861F2C1C7746003CE50F /* PostgREST */; };
+		E1DC86222C1C7746003CE50F /* Realtime in Frameworks */ = {isa = PBXBuildFile; productRef = E1DC86212C1C7746003CE50F /* Realtime */; };
+		E1DC86242C1C7746003CE50F /* Storage in Frameworks */ = {isa = PBXBuildFile; productRef = E1DC86232C1C7746003CE50F /* Storage */; };
+		E1DC86262C1C7746003CE50F /* Supabase in Frameworks */ = {isa = PBXBuildFile; productRef = E1DC86252C1C7746003CE50F /* Supabase */; };
+		E1DC86292C1C77A8003CE50F /* CalculatorModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1DC86282C1C77A8003CE50F /* CalculatorModel.swift */; };
+		E1DC862B2C1C77DB003CE50F /* CalculatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1DC862A2C1C77DB003CE50F /* CalculatorView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,10 +38,11 @@
 		E143E8942C1363AF00EB76B9 /* TranslationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TranslationView.swift; sourceTree = "<group>"; };
 		E143E8962C13648700EB76B9 /* MagnifyingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MagnifyingView.swift; sourceTree = "<group>"; };
 		E143E8992C1365DE00EB76B9 /* WeatherReportView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherReportView.swift; sourceTree = "<group>"; };
-		E143E89B2C13663000EB76B9 /* CalculatorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculatorView.swift; sourceTree = "<group>"; };
 		E143E89D2C1366DE00EB76B9 /* PaintingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaintingView.swift; sourceTree = "<group>"; };
 		E143E89F2C13670D00EB76B9 /* VaultView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VaultView.swift; sourceTree = "<group>"; };
-		E1DC85D62C19FD6B003CE50F /* CalculatorModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculatorModel.swift; sourceTree = "<group>"; };
+		E14FC58B2C1C7B1400D0EBCA /* CalculatorMemoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculatorMemoryView.swift; sourceTree = "<group>"; };
+		E1DC86282C1C77A8003CE50F /* CalculatorModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = CalculatorModel.swift; path = ViewModel/CalculatorModel.swift; sourceTree = "<group>"; };
+		E1DC862A2C1C77DB003CE50F /* CalculatorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculatorView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -42,6 +50,12 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E1DC86202C1C7746003CE50F /* PostgREST in Frameworks */,
+				E1DC861E2C1C7746003CE50F /* Functions in Frameworks */,
+				E1DC86262C1C7746003CE50F /* Supabase in Frameworks */,
+				E1DC861C2C1C7746003CE50F /* Auth in Frameworks */,
+				E1DC86242C1C7746003CE50F /* Storage in Frameworks */,
+				E1DC86222C1C7746003CE50F /* Realtime in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -67,6 +81,7 @@
 		E143E87F2C10A3B900EB76B9 /* AssistiveTouch++ */ = {
 			isa = PBXGroup;
 			children = (
+				E1DC862C2C1C780E003CE50F /* New Group */,
 				E143E8802C10A3B900EB76B9 /* AssistiveTouch__App.swift */,
 				E143E88F2C10A3CE00EB76B9 /* Model */,
 				E143E88E2C10A3C500EB76B9 /* View */,
@@ -97,7 +112,7 @@
 		E143E88F2C10A3CE00EB76B9 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				E1DC85D52C19FD3F003CE50F /* FunctionModel */,
+				E1DC86282C1C77A8003CE50F /* CalculatorModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -108,19 +123,27 @@
 				E143E8942C1363AF00EB76B9 /* TranslationView.swift */,
 				E143E8962C13648700EB76B9 /* MagnifyingView.swift */,
 				E143E8992C1365DE00EB76B9 /* WeatherReportView.swift */,
-				E143E89B2C13663000EB76B9 /* CalculatorView.swift */,
+				E14FC58A2C1C7A5C00D0EBCA /* CalculatorViewGroup */,
 				E143E89D2C1366DE00EB76B9 /* PaintingView.swift */,
 				E143E89F2C13670D00EB76B9 /* VaultView.swift */,
 			);
 			path = FunctionView;
 			sourceTree = "<group>";
 		};
-		E1DC85D52C19FD3F003CE50F /* FunctionModel */ = {
+		E14FC58A2C1C7A5C00D0EBCA /* CalculatorViewGroup */ = {
 			isa = PBXGroup;
 			children = (
-				E1DC85D62C19FD6B003CE50F /* CalculatorModel.swift */,
+				E1DC862A2C1C77DB003CE50F /* CalculatorView.swift */,
+				E14FC58B2C1C7B1400D0EBCA /* CalculatorMemoryView.swift */,
 			);
-			path = FunctionModel;
+			path = CalculatorViewGroup;
+			sourceTree = "<group>";
+		};
+		E1DC862C2C1C780E003CE50F /* New Group */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "New Group";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -139,6 +162,14 @@
 			dependencies = (
 			);
 			name = "AssistiveTouch++";
+			packageProductDependencies = (
+				E1DC861B2C1C7746003CE50F /* Auth */,
+				E1DC861D2C1C7746003CE50F /* Functions */,
+				E1DC861F2C1C7746003CE50F /* PostgREST */,
+				E1DC86212C1C7746003CE50F /* Realtime */,
+				E1DC86232C1C7746003CE50F /* Storage */,
+				E1DC86252C1C7746003CE50F /* Supabase */,
+			);
 			productName = "AssistiveTouch++";
 			productReference = E143E87D2C10A3B900EB76B9 /* AssistiveTouch++.app */;
 			productType = "com.apple.product-type.application";
@@ -167,6 +198,9 @@
 				Base,
 			);
 			mainGroup = E143E8742C10A3B900EB76B9;
+			packageReferences = (
+				E1DC861A2C1C7746003CE50F /* XCRemoteSwiftPackageReference "supabase-swift" */,
+			);
 			productRefGroup = E143E87E2C10A3B900EB76B9 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -194,15 +228,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				E143E89A2C1365DE00EB76B9 /* WeatherReportView.swift in Sources */,
-				E1DC85D72C19FD6B003CE50F /* CalculatorModel.swift in Sources */,
 				E143E8A02C13670D00EB76B9 /* VaultView.swift in Sources */,
 				E143E8932C11E62700EB76B9 /* MenuView.swift in Sources */,
 				E143E8972C13648700EB76B9 /* MagnifyingView.swift in Sources */,
 				E143E8952C1363AF00EB76B9 /* TranslationView.swift in Sources */,
-				E143E89C2C13663000EB76B9 /* CalculatorView.swift in Sources */,
+				E1DC86292C1C77A8003CE50F /* CalculatorModel.swift in Sources */,
+				E1DC862B2C1C77DB003CE50F /* CalculatorView.swift in Sources */,
 				E143E89E2C1366DE00EB76B9 /* PaintingView.swift in Sources */,
 				E143E8812C10A3B900EB76B9 /* AssistiveTouch__App.swift in Sources */,
 				E143E8912C10A44500EB76B9 /* SplashScreenView.swift in Sources */,
+				E14FC58C2C1C7B1400D0EBCA /* CalculatorMemoryView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -408,6 +443,50 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		E1DC861A2C1C7746003CE50F /* XCRemoteSwiftPackageReference "supabase-swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/supabase-community/supabase-swift";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.5.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		E1DC861B2C1C7746003CE50F /* Auth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E1DC861A2C1C7746003CE50F /* XCRemoteSwiftPackageReference "supabase-swift" */;
+			productName = Auth;
+		};
+		E1DC861D2C1C7746003CE50F /* Functions */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E1DC861A2C1C7746003CE50F /* XCRemoteSwiftPackageReference "supabase-swift" */;
+			productName = Functions;
+		};
+		E1DC861F2C1C7746003CE50F /* PostgREST */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E1DC861A2C1C7746003CE50F /* XCRemoteSwiftPackageReference "supabase-swift" */;
+			productName = PostgREST;
+		};
+		E1DC86212C1C7746003CE50F /* Realtime */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E1DC861A2C1C7746003CE50F /* XCRemoteSwiftPackageReference "supabase-swift" */;
+			productName = Realtime;
+		};
+		E1DC86232C1C7746003CE50F /* Storage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E1DC861A2C1C7746003CE50F /* XCRemoteSwiftPackageReference "supabase-swift" */;
+			productName = Storage;
+		};
+		E1DC86252C1C7746003CE50F /* Supabase */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E1DC861A2C1C7746003CE50F /* XCRemoteSwiftPackageReference "supabase-swift" */;
+			productName = Supabase;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = E143E8752C10A3B900EB76B9 /* Project object */;
 }

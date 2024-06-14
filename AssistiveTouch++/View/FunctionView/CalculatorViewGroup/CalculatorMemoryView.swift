@@ -8,11 +8,16 @@
 import SwiftUI
 
 struct CalculatorMemoryView: View {
+    @Binding var memorys: [MemoryItem]
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        NavigationStack{
+            List(memorys){ memory in
+                Text(String(format: "%g", memory.answer))
+            }
+        }
     }
 }
 
 #Preview {
-    CalculatorMemoryView()
+    CalculatorMemoryView(memorys: Binding.constant(exampleItems))
 }
