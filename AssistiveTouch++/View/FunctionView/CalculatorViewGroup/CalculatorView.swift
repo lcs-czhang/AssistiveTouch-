@@ -8,13 +8,18 @@
 import SwiftUI
 
 struct CalculatorView: View {
+    
+    //Stored Properties
     @State var number1 = 0.0
     @State var number2 = 0.0
-    @State var answer = 0.0
     @State var operators = ""
-    @State var note = ""
     
-    @Binding var memorys: [MemoryItem]
+    //Computed Properties
+    @State var answer = 0.0
+    @State var note = ""
+    @State private var memoryListIsShowing = false
+    @State private var memorys: [MemoryItem] = []
+    
     var body: some View {
         NavigationStack {
             VStack() {
@@ -102,20 +107,29 @@ struct CalculatorView: View {
                             .scaledToFit()
                     })
                     Spacer()
-                    NavigationLink{
-                        CalculatorMemoryView()
-                    }label:{
+                    Button(action: {
+                        memoryListIsShowing = true
+                    }, label:{
                         Image(systemName:"m.square")
                             .resizable()
                             .scaledToFit()
-                    }
+                    })
                     Spacer()
                     Button(action: {
                         note = ""
                         answer = Calculation()
-                        let newMemory = MemoryItem(answer: answer)
-                        memorys.append(newMemory)
-                    }, label: {
+                        if note == "" {
+                            let newMemory = MemoryItem(
+                                number1: number1,
+                                number2: number2,
+                                operators: operators,
+                                answer: answer
+                            )
+                            memorys.append(newMemory)
+                        }
+                        operators = ""
+                    },
+                           label: {
                         Image(systemName: "equal.square")
                             .resizable()
                             .scaledToFit()
@@ -129,12 +143,18 @@ struct CalculatorView: View {
                     format: .number
                 )
                 .textFieldStyle(.roundedBorder)
-                Text("\(answer)")
+                Text(String(format: "%g", answer))
                     .font(.title)
                 Text(note)
                     .font(.system(size: 20))
             }
             .foregroundStyle(Color.eToolText)
+            .sheet(isPresented: $memoryListIsShowing) {
+                CalculatorMemoryView(
+                    memorys: $memorys,
+                    isShowing: $memoryListIsShowing
+                )
+            }
         .padding()
         }
     }
@@ -157,11 +177,10 @@ struct CalculatorView: View {
         default:
             note = "So, where is your operator?"
         }
-        operators = ""
         return answer
     }
 }
 
 #Preview {
-    CalculatorView(memory: <#Binding<[MemoryItem]>#>)
+    CalculatorView()
 }
